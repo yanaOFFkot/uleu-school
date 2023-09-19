@@ -1,0 +1,107 @@
+.price {
+    width: 1216px;
+    height: 800;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+        margin-top: 4rem;
+
+
+        @media only screen and (min-width: 320px) {
+            flex-direction: column;
+            height: auto;
+    
+        }
+    
+        @media only screen and (min-width: 1024px) {
+            flex-direction: row;
+            height: auto;
+    
+        }
+
+        .items {
+            display: flex;
+            width: 350px;
+            padding: 32px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            flex-shrink: 0;
+            align-self: stretch;
+            border-radius: 50px;
+            border: 3px solid rgba(74, 9, 124, 0.70);
+            background: rgba(248, 249, 251, 0.70);
+    
+            /* Shadow/XSM */
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+                align-self: stretch;
+
+                .containerFirst {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 13px;
+                    align-self: stretch;
+
+                    .label {
+                        display: flex;
+                        width: 230px;
+                        height: 40px;
+                        padding: 2px 8px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 4px;
+                        border-radius: 12px;
+                        background: var(--Accent_Yellow, #FBB606);
+                    }
+
+                    .textConteiner {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 4px;
+                        align-self: stretch;
+
+                    }
+                }
+
+                .containerSecond {
+                    display: flex;
+                    padding-top: 32px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    align-self: stretch;
+                    border-top: 1px solid var(--gray-50, #5F6D7E);
+
+                    .checkContainer {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        align-self: stretch;
+                    }
+                }
+
+
+            }
+        }
+    
+    }
+}

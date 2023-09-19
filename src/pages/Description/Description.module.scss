@@ -1,0 +1,105 @@
+.description {
+    display: flex;
+    width: 100vw;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .columns {
+        display: flex;
+        max-width: 1200px;
+        height: auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;  
+        
+        @media only screen and (min-width: 320px) {
+            flex-direction: column;
+            height: auto;
+    
+        }
+    
+        @media only screen and (min-width: 1200px) {
+            flex-direction: row;
+            height: auto;
+            padding: 0px;
+    
+        }
+    }
+
+
+
+    .textPart {
+        flex-basis: 50%;
+        z-index: 1;
+
+        @media only screen and (max-width: 1024px) {
+            justify-content: center;
+            flex-basis: 100%;
+        }
+    }
+
+    .photo {
+        flex-basis: 50%;
+        position: relative;
+    
+
+        @media only screen and (min-width: 320px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            flex-basis: 50%;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .photo2 {
+            display: flex;
+            width: 100%;
+
+            @media only screen and (min-width: 1024px) {
+                width: 80%;
+            }
+        }
+  
+  
+    } 
+}
+
+.table {
+    display: flex;
+    padding: 20px;
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(243, 235, 251, 0.5);
+    border-radius: 50px;
+    gap: 50px;
+    align-items: center;
+
+
+    @media only screen and (min-width: 320px) {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        flex-direction: column;
+        height: auto;
+
+    }
+}
+
+// .scroll {
+//     overflow-y: scroll; /* Добавляем прокрутку по вертикали */
+// }
+

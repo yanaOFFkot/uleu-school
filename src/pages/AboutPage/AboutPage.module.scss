@@ -1,0 +1,101 @@
+.about {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    background-color: rgba(243, 235, 251, 0.5);
+    border-radius: 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 320px) {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        height: 600px;
+
+    }
+
+    .profile {
+        flex-basis: 50%;
+        position: relative;
+
+        @media only screen and (min-width: 320px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            flex-basis: 50%;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .profilePhoto {
+            display: flex;
+            width: 70%;
+
+            @media only screen and (min-width: 1024px) {
+                width: 80%;
+            }
+        }
+
+        .ellipse {
+            position: absolute;
+            text-align: center;
+            bottom: -190px;
+            left: -100px;
+            border-radius: 50%;
+            width: 530px;
+            height: 200px;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
+            box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.20), 0px -14px 14px 0px rgba(0, 0, 0, 0.17), 0px -31px 19px 0px rgba(0, 0, 0, 0.10), 0px -55px 22px 0px rgba(0, 0, 0, 0.03), 0px -87px 24px 0px rgba(0, 0, 0, 0.00);
+
+
+
+            @media only screen and (min-width: 320px) {
+                position: absolute;
+                margin-top: -80px;
+                height: auto;
+                z-index: 1;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2rem;
+            }
+
+            @media only screen and (min-width: 1024px) {
+                left: -70px;
+                bottom: -70px;
+                height: 200px;
+                padding: 20px;
+                margin-top: 0;
+                justify-content: right;
+            }
+
+        }
+    }
+
+
+    .description {
+        flex-basis: 50%;
+
+        @media only screen and (max-width: 1024px) {
+            justify-content: center;
+            flex-basis: 100%;
+        }
+    }
+}

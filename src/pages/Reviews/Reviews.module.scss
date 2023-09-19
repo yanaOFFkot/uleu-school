@@ -1,0 +1,113 @@
+.reviews {
+    display: flex;
+    width: 100vw;
+    padding: 3rem;
+    background: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .group {
+        height: auto;
+        flex-shrink: 0;
+
+        .frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            .headline {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .row {
+                display: flex;
+                width: 1150px;
+                flex-direction: row;
+                align-items: center;
+                gap: 32px;
+                justify-content: center;
+                position: relative;
+
+
+            
+                @media only screen and (max-width: 1180px) {
+                    flex-direction: column;
+                    height: auto;
+                    align-items: center;
+                    margin: 0; 
+                    width: 400px;         
+                }
+
+                @media only screen and (max-width: 320px) {
+                    flex-direction: column;
+                    height: auto;
+                    align-items: center;
+                    margin: 0;            
+                }
+
+                .content {
+                    max-width: 360px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    gap: 32px;
+                    // align-self: stretch;
+
+                    .features {
+                        display: flex;
+                        height: 315px;
+                        padding: 24px 32px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 24px;
+                        flex: 1 0 0;
+                        border-radius: 30px;
+                        border: 5px solid rgba(74, 9, 124, 0.60);
+                        background: rgba(243, 235, 251, 0.50);
+                        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                        .verticalCont {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-self: stretch;
+
+                            .frame {
+                                display: flex;
+                                height: 48px;
+                                flex-direction: column;
+                                align-items: flex-start; /* Выравнивание по левому краю */
+                                justify-content: center; /* Вертикальное выравнивание по центру */
+                                gap: 5px;
+                            }
+
+                            .image {
+                                display: flex;
+                                width: 100px;
+                                height: 100px;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50px;
+                                // background: url(<path-to-image>), lightgray 50% / cover no-repeat, #5F6D7E;
+                            }
+                        }
+
+                        .textCont {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 8px;
+                            align-self: stretch;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

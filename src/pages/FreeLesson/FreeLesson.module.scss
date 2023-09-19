@@ -1,0 +1,147 @@
+$girlImage: url('../../assets/images/Girl_2.png');
+
+.freeLesson {
+  width: 1160px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media only screen and (max-width: 1160px) {
+    width: 70%; /* Убрана дублирующаяся строка display и height */
+    display: contents;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 50%; /* Убрана дублирующаяся строка display и height */
+    display: contents;
+
+  }
+
+  .rectangle {
+    width: 1160px;
+    height: 450px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #3B2667 0%, #BC78EC 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    position: relative;
+
+    @media only screen and (max-width: 1160px) {
+      width: 70%;
+      height: auto;
+      padding: 30px;
+    }
+
+    .pictures {
+      width: 346px;
+      height: 450px;
+      background: $girlImage;
+
+      @media only screen and (max-width: 768px) {
+        width: 50%;
+        height: auto;
+        position: relative;
+      }
+
+      @media only screen and (max-width: 1160px) {
+        width: 70%;
+        height: auto;
+        position: relative;
+      }
+    }
+
+    .textContainer {
+      width: 700px;
+      height: auto;
+      display: flex;
+      left: 400px;
+      bottom: 400px;
+      margin-top: 0;
+      justify-content: right;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      position: relative;
+
+      @media only screen and (max-width: 1160px) {
+        left: 0px;
+        bottom: 0px;
+        display: flex;
+        width: 100%;
+        height: auto;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+    }
+
+    .textH {
+      font-family: Bangers Cyrillic;
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 10px;
+      color: var(--Accent_Yellow, #fbb606); /* Цвет текста */
+      opacity: 0.9;
+      text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  
+      @media only screen and (max-width: 1160px) {
+        font-size: 70px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        font-size: 50px;
+        letter-spacing: 0;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 425px) {
+        font-size: 40px;
+        letter-spacing: 0;
+        text-align: center;
+      }
+  
+    }
+
+  } 
+}
+
+.form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 250px;
+    padding: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 4rem;
+    margin: 10px;
+    background-color: rgba(248, 249, 251, 0.70);
+  }
+}

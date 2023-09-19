@@ -1,0 +1,107 @@
+.font-h1 {
+  font-family: 'Bangers Cyrillic';;
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  letter-spacing: 10px;
+}
+
+.font-h2 {
+  font-family: "Gilroy-ExtraBold", Helvetica;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0px;
+  line-height: 6rem;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.font-h3 {
+  font-family: "Gilroy-ExtraBold", Helvetica;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0px;
+  line-height: 6rem;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.font-h4 {
+  font-family: "Gilroy-ExtraBold", Helvetica;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 6rem;
+  margin-top: 0px;
+}
+
+.font-h5 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 4rem;
+  margin-top: 0px;
+}
+
+.font-h6 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 4rem;
+  margin-top: 0px;
+}
+
+
+
+.text-color-white {
+  color: rgba(243, 235, 251, 1);
+}
+
+.text-color-purple {
+  color: rgba(74, 9, 124, 1);
+}
+
+.text-color-purplelight {
+  color: rgba(150, 21, 252, 1);
+}
+
+.text-color-black {
+  color: rgb(41, 40, 40);
+}
+
+.text-color-grey {
+  color: rgba(160, 158, 158, 1);
+}
+.text-color-yellow {
+  color: rgba(251, 182, 6, 1);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: disc;
+  /* Круглые маркеры */
+}
+
+ul.custom-list-circle {
+  list-style-type: disc;
+  /* Круглые маркеры */
+}
